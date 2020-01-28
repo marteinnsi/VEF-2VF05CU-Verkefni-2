@@ -7,14 +7,11 @@ def route_index():
 
 @app.route("/kennitala/<int:kt>")
 def route_kennitala(kt):
-    if len(str(kt)) == 10:
-        tversumma = 0
-        while kt:
-            tversumma += kt % 10
-            kt //= 10
-        return str(tversumma)
-    else:
-        return "Kennitala á að vera 10 stafir."
+    tversumma = 0
+    while kt:
+        tversumma += kt % 10
+        kt //= 10
+    return str(tversumma)
 
 if __name__ == "__main__":
     app.run(threaded=True, port=5000)
