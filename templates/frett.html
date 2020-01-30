@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+Fréttir
+{% endblock %}
+
+{% block content %}
+<a href="/">Til baka</a>
+
+{% if frett_id in frettir %}
+    <p>in frettir yes</p>
+
+<h4>{{ frett_id }}</h4>
+<h1>{{ frettir[frett_id][0] }}</h1>
+<p>{{ frettir[frett_id][1] }}</p>
+{% endif %}
+
+{% endblock %}
