@@ -6,8 +6,9 @@ Fréttir
 
 {% block content %}
 <a href="/">Til baka</a>
-
-<h4>{{ frett_id }}</h4>
-<h1>{{ frettir[frett_id][0] }}</h1>
-<p>{{ frettir[frett_id][1] }}</p>
+<br/>
+<img src="/static/img/{{ frett[4] }}" style="width: 230px; height: auto;">
+<h1 style="line-height: 0;">{{ frett[2] }}</h1>
+<p>{{ frett[0] }} | <a style="display: inline;" href="maito:{{frett [1]}}">{{ frett[1] }}</a></p>
+<p>{{ frett[3] }}</p>
 {% endblock %}

@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+html, head, body {
+    background-color: #76E7B3;
+    padding: 1em;
+}
+
+a {
+    color: blue;
+    display: block;
+}
